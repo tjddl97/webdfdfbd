@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <h1>hello</h1>
+    <a href="{% url 'detail' %}"><h1>현성's WORD COUNT!(꾸몄음)</h1></a>
+
+    <form action="{% url 'result' %}">
+        <textarea name="fulltext" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">Let's Count!</button>
+    </form>
+</body>
+</html>
